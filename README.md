@@ -187,3 +187,8 @@ pip install -r requirements.txt
 Developed by YOUR_NAME
 
 GitHub: https://github.com/LeutnantMutig
+
+
+## 📝 License
+
+This project is licensed under the MIT License.
