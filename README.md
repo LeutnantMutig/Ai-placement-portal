@@ -1,8 +1,8 @@
 # AI-Powered Placement Portal
 
-A full-stack AI-powered Placement Portal developed using Django that connects Students and Employers on a single platform.  
-The system allows students to create profiles, upload resumes, and apply for jobs, while employers can post opportunities and manage applicants efficiently.
+An AI-powered Placement Portal developed using Django that connects Students and Employers on a single platform.
 
+The system helps students create profiles, upload resumes, apply for jobs, and receive placement updates, while employers can manage job postings and applicants efficiently.
 
 
 # 🚀 Features
@@ -10,14 +10,15 @@ The system allows students to create profiles, upload resumes, and apply for job
 ## 👨‍🎓 Student Features
 
 - Student Registration & Login
-- Profile Management
-- Resume Upload
+- Secure Authentication System
+- Student Profile Management
+- Resume Upload Functionality
 - Skill Management
 - AI-Based Skill Analysis
 - Job Application System
-- Dashboard Access
+- Personalized Dashboard
+- Password Reset System
 - Email Notifications
-
 
 
 ## 🏢 Employer Features
@@ -30,15 +31,14 @@ The system allows students to create profiles, upload resumes, and apply for job
 - Recruiter Dashboard
 - Candidate Communication via Email
 
-
+---
 
 ## 🤖 AI Features
 
 - AI Skill Detection
 - Resume Skill Analysis
 - Embedding-Based Processing
-- Smart Recommendations
-
+- Smart Recommendation Features
 
 
 # 🛠️ Tech Stack
@@ -54,58 +54,136 @@ The system allows students to create profiles, upload resumes, and apply for job
 - Django
 
 ## Database
-- SQLite
+- MySQL
 
 ## AI Integration
 - AI Embedding Features
 
 
-
 # 📂 Project Structure
 
 ```bash
-placement_project/
+ai-placement-portal/
 │
-├── accounts/
-├── employers/
-├── templates/
-├── static/
-├── media/
-├── placement_project/
-├── manage.py
-├── requirements.txt
-├── README.md
-└── .gitignore
+├── accounts/                 # Student account management
+├── media/                    # Uploaded resumes and media files
+├── placement_project/        # Main Django project settings
+├── portal/                   # Core placement portal functionality
+├── static/                   # CSS, JavaScript, Images
+├── templates/                # HTML templates
+│
+├── create_admin.py           # Admin creation script
+├── manage.py                 # Django project manager
+├── requirements.txt          # Project dependencies
+├── reset_user_password.py    # Password reset utility
+├── Start_AI_Placement.bat    # Windows startup script
+└── README.md
+```
 
-⚙️ Installation Guide
-1️⃣ Clone Repository
-  git clone https://github.com/YOUR_USERNAME/placement-portal.git
-  cd placement-portal
 
-2️⃣ Create Virtual Environment
-  python -m venv venv
-  Activate Environment
-  
-  Windows
-  venv\Scripts\activate
-  
-  Linux / Mac
-  source venv/bin/activate
+# ⚙️ Installation Guide
 
-3️⃣ Install Dependencies
-  pip install -r requirements.txt
+## 1️⃣ Clone Repository
 
-4️⃣ Configure Environment Variables
-  Create .env file:
-  SECRET_KEY=your_secret_key
-  DEBUG=True
+```bash
+git clone https://github.com/YOUR_USERNAME/ai-placement-portal.git
+cd ai-placement-portal
+```
 
-5️⃣ Run Database Migrations
-  python manage.py makemigrations
-  python manage.py migrate
 
-6️⃣ Run Development Server
-  python manage.py runserver
+## 2️⃣ Create Virtual Environment
 
-  Open browser:
-  http://127.0.0.1:8000/
+```bash
+python -m venv venv
+```
+
+### Activate Virtual Environment
+
+### Windows
+
+```bash
+venv\Scripts\activate
+```
+
+### Linux / Mac
+
+```bash
+source venv/bin/activate
+```
+
+
+## 3️⃣ Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+
+## 4️⃣ Configure Environment Variables
+
+Create a `.env` file and add:
+
+```env
+SECRET_KEY=your_secret_key
+DEBUG=True
+```
+
+
+## 5️⃣ Run Database Migrations
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
+```
+
+
+## 6️⃣ Create Superuser
+
+```bash
+python manage.py createsuperuser
+```
+
+
+## 7️⃣ Run Development Server
+
+```bash
+python manage.py runserver
+```
+
+Open browser:
+
+```bash
+http://127.0.0.1:8000/
+```
+
+
+# 🔐 Security
+
+- `.env` file is excluded from GitHub
+- Sensitive credentials are protected
+- Secret keys are not uploaded publicly
+
+
+# 🧾 Requirements
+
+Example dependencies:
+
+```txt
+Django
+python-dotenv
+google-generativeai
+Pillow
+```
+
+Install all dependencies using:
+
+```bash
+pip install -r requirements.txt
+```
+
+
+# 👨‍💻 Author
+
+Developed by YOUR_NAME
+
+GitHub: https://github.com/LeutnantMutig
