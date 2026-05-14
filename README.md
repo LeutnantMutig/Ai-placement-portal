@@ -88,7 +88,6 @@ ai-placement-portal/
 ├── create_admin.py           # Admin account creation script
 ├── manage.py                 # Django project manager
 ├── requirements.txt          # Project dependencies
-├── reset_user_password.py    # Password reset utility
 └── Start_AI_Placement.bat    # Windows startup script
 ```
 
