@@ -1,8 +1,9 @@
 # AI-Powered Placement Portal
 
-An AI-powered Placement Portal developed using Django that connects Students and Employers on a single platform.
+An AI-powered Placement Portal developed using Django that connects Students, Employers, and Administrators on a single platform.
 
-The system helps students create profiles, upload resumes, apply for jobs, and receive placement updates, while employers can manage job postings and applicants efficiently.
+The system helps students create profiles, upload resumes, apply for jobs, and receive placement updates, while employers can manage job postings and applicants efficiently.  
+The Admin Panel allows complete management and monitoring of the platform.
 
 
 # 🚀 Features
@@ -31,7 +32,19 @@ The system helps students create profiles, upload resumes, apply for jobs, and r
 - Recruiter Dashboard
 - Candidate Communication via Email
 
----
+
+## 👨‍💼 Admin Features
+
+- Secure Admin Dashboard
+- Student Management
+- Employer Management
+- Job Post Monitoring
+- Resume & Application Management
+- User Authentication Control
+- Database Management
+- Platform Monitoring
+- Admin Account Creation Support
+
 
 ## 🤖 AI Features
 
@@ -72,7 +85,7 @@ ai-placement-portal/
 ├── static/                   # CSS, JavaScript, Images
 ├── templates/                # HTML templates
 │
-├── create_admin.py           # Admin creation script
+├── create_admin.py           # Admin account creation script
 ├── manage.py                 # Django project manager
 ├── requirements.txt          # Project dependencies
 ├── reset_user_password.py    # Password reset utility
@@ -85,7 +98,7 @@ ai-placement-portal/
 ## 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-placement-portal.git
+git clone https://github.com/LeutnantMutig/ai-placement-portal.git
 cd ai-placement-portal
 ```
 
@@ -117,7 +130,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-
 ## 4️⃣ Configure Environment Variables
 
 Create a `.env` file and add:
@@ -136,7 +148,15 @@ python manage.py migrate
 ```
 
 
-## 6️⃣ Create Superuser
+## 6️⃣ Create Admin Account
+
+### Option 1
+
+```bash
+python create_admin.py
+```
+
+### Option 2
 
 ```bash
 python manage.py createsuperuser
@@ -161,6 +181,7 @@ http://127.0.0.1:8000/
 - `.env` file is excluded from GitHub
 - Sensitive credentials are protected
 - Secret keys are not uploaded publicly
+
 
 
 # 🧾 Requirements
