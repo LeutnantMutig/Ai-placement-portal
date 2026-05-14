@@ -57,7 +57,6 @@ The system allows students to create profiles, upload resumes, and apply for job
 - SQLite
 
 ## AI Integration
-- Gemini API
 - AI Embedding Features
 
 
