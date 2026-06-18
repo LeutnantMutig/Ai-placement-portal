@@ -81,10 +81,8 @@ ai-placement-portal/
 ├── accounts/                 # Student account management
 ├── media/                    # Uploaded resumes and media files
 ├── placement_project/        # Main Django project settings
-├── portal/                   # Core placement portal functionality
+├── portal/                   # Core placement portal functionality , templates/ # HTML templates
 ├── static/                   # CSS, JavaScript, Images
-├── templates/                # HTML templates
-│
 ├── create_admin.py           # Admin account creation script
 ├── manage.py                 # Django project manager
 ├── requirements.txt          # Project dependencies
