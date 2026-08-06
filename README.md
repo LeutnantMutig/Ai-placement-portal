@@ -201,7 +201,7 @@ pip install -r requirements.txt
 
 # 👨‍💻 Author
 
-Developed by YOUR_NAME
+Developed by Chirag Pawar
 
 GitHub: https://github.com/LeutnantMutig
 
