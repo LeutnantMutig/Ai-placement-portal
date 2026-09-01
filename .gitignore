@@ -1,0 +1,11 @@
+.env
+venv/
+__pycache__/
+*.pyc
+
+# User-uploaded/runtime data
+media/
+*.sql
+
+# Local editor settings
+.vscode/
